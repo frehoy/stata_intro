@@ -30,11 +30,12 @@ outreg2 using `tablepath'`out_table', append `table_options' addtext(Country FE,
 
 //Let's make a depressing figure
 //generate difference in life expectancy BY COUNTRY, the bysort is very important
+// [_n-1] selects values from the row above
 bysort country: gen life_diff = life_exp - life_exp[_n-1]
 //make a dummy for falling life expectancy
 gen fell = 0
 //3 life-years per year dropped seems a reasonable threshold
-replace fell = 1 if life_diff<-3
+replace fell = 1 if life_diff < -3
 //all countries that ever had a fall bigger than threshold now get a dummy
 bysort country: gen everfell = 1 if sum(fell)>0
 //to show them

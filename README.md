@@ -18,6 +18,7 @@ The repository consists of 5 files:
 
 Disclaimer:
 The scripts contained are not best practices but a very brief introduction to a Stata+LaTeX workflow that can be walked through step by step to show some hopefully interesting features, not to be used as a styleguide. 
+The practice shown, that of merging data by countrynames, is deeply flawed and only included as an illustration as to why countrycodes are important. 
 
 
 UCDP PRIO ACD is by:
