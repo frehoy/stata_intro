@@ -16,6 +16,12 @@ The repository consists of 5 files:
 * ucdp-prio-acd-4-2015.dta - the UCDP/PRIO Armed Conflict Dataset version 4-2015 (1)
 * worldbank.csv - a wide-format dataset from the World Bank containing a subset of the World development indicators. 
 
+# Get started
+* Change the cd command on line 11 of main.do to the directory where you downloaded and extracted this repository.
+* Run the main.do file
+* ????
+* PROFIT
+
 Disclaimer:
 The scripts contained are not best practices but a very brief introduction to a Stata+LaTeX workflow that can be walked through step by step to show some hopefully interesting features, not to be used as a styleguide. 
 The practice shown, that of merging data by countrynames, is deeply flawed and only included as an illustration as to why countrycodes are important. 
